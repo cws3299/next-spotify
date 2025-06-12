@@ -15,22 +15,21 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({
+  children,
   desktop,
   mobile,
 }: {
+  children: React.ReactNode;
   desktop: React.ReactNode;
   mobile: React.ReactNode;
 }) {
-  const headerList = await headers();
-  const ua = headerList.get("user-agent") || "";
-  const isMobile =
-    /iPhone|iPad|iPod|Android|Mobile|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+  const ua = (await headers()).get("user-agent") || "";
+  const isMobile = /iPhone|Android|Mobile/.test(ua);
 
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        {/* 병렬 슬롯으로부터 전달받은 UI를 조건적으로 렌더링 */}
         {isMobile ? mobile : desktop}
       </body>
     </html>
