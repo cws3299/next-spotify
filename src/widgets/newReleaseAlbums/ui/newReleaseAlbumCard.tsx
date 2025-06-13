@@ -9,7 +9,7 @@ interface Props {
     artistName?: string;
 }
 
-export function newReleaseAlbumCard({ image, name, artistName }: Props) {
+export function NewReleaseAlbumCard({ image, name, artistName }: Props) {
     return (
         <div className="relative rounded-xl overflow-hidden group shadow-sm transition-all hover:shadow-md">
             {/* 앨범 이미지 */}

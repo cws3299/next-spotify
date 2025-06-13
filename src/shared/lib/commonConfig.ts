@@ -1,2 +1,5 @@
-export const CLIENT_ID = process.env.CLIENT_ID!;
-export const CLIENT_SECRET = process.env.CLIENT_SECRET!;
+export const CLIENT_ID = process.env.NEXT_PUBLIC_APP_SPOTIFY_CLIENT_ID!;
+export const CLIENT_SECRET = process.env.NEXT_PUBLIC_APP_SPOTIFY_SECRET_ID!;
+export const SPOTIFY_BASE_URL = process.env.NEXT_PUBLIC_APP_SPOTIFY_BASE_URL!;
+export const REDIRECT_URI = process.env.NEXT_PUBLIC_APP_REDIRECT_URI!;
+export const REDIRECT_AUTH_URL = process.env.NEXT_PUBLIC_APP_REDIRECT_AUTH_URL!;

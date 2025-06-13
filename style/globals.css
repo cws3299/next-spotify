@@ -4,8 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+    /* --foreground: oklch(0.98 0 0); 고민중임 기본이 검정테마로 갈 생각이라..... */
+    --foreground: oklch(0.98 0 0);
     --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
     --radius: 0.625rem;
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
