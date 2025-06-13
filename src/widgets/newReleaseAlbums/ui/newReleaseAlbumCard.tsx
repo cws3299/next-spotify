@@ -11,7 +11,7 @@ interface Props {
 
 export function NewReleaseAlbumCard({ image, name, artistName }: Props) {
     return (
-        <div className="relative rounded-xl overflow-hidden group shadow-sm transition-all hover:shadow-md">
+        <div className="relative rounded-xl overflow-hidden group shadow-sm transition-all hover:shadow-md hover:cursor-pointer">
             {/* 앨범 이미지 */}
             <div className="relative w-full aspect-square">
                 <Image

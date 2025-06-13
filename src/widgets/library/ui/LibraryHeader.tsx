@@ -7,7 +7,7 @@ export function LibraryHeader() {
     return (
         <div className="flex items-center justify-between px-2 py-2">
             <div className="flex items-center gap-5 flex-grow">
-                <BookmarkIcon className="w-6 h-6 text-primary" />
+                <BookmarkIcon className="w-6 h-6 text-spotify" />
                 <h2 className="text-lg font-bold truncate">Your Library</h2>
             </div>
             <Button

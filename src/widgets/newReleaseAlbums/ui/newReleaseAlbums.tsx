@@ -2,11 +2,12 @@
 
 import { useGetNewReleaseAlbum } from "@/entities/newReleaseAlbum/model/useGetNewReleaseAlbum";
 import { NewReleaseAlbumCard } from "./newReleaseAlbumCard";
+import { LoadingSpinner } from "@/shared/ui";
 
 export default function NewReleaseAlbums() {
     const { data, isLoading } = useGetNewReleaseAlbum({ limit: 6 });
 
-    if (isLoading) return <p>Loading...</p>;
+    if (isLoading) return <LoadingSpinner />;
     if (!data) return <p>No data available</p>;
 
     return (
