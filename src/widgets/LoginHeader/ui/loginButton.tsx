@@ -6,7 +6,7 @@ export function LoginButton() {
     return (
         <Button
             size="lg"
-            className="bg-twitter-blue hover:bg-twitter-blue-darker text-white font-semibold"
+            className="bg-spotify hover:bg-spotify-hover text-white font-semibold hover:cursor-pointer"
         >
             Login
         </Button>

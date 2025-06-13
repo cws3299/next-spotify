@@ -1,2 +1,2 @@
-export { LoginButton } from "./loginButton";
-export { LoginHeader } from "./loginHeader";
+export { LoginButton } from "./ui/loginButton";
+export { LoginHeader } from "./ui/loginHeader";

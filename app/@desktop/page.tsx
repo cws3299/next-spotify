@@ -1,5 +1,10 @@
-import Image from "next/image";
+import HomeView from "@/views/home";
 
 export default function Page() {
-    return <div></div>;
+    console.log("나오지");
+    return (
+        <div>
+            <HomeView />
+        </div>
+    );
 }
