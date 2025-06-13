@@ -1,4 +1,4 @@
-import { LoginButton } from "./index";
+import { LoginButton } from "../index";
 
 export function LoginHeader() {
     return (
